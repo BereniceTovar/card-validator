@@ -1,0 +1,27 @@
+{
+  "name": "card-validator",
+  "version": "1.0.0",
+  "description": "* **Track:** _Common Core_ * **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_ * **Unidad:** _Producto final_",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start --single-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BereniceTovar/card-validator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BereniceTovar/card-validator/issues"
+  },
+  "homepage": "https://github.com/BereniceTovar/card-validator#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "karma": "^2.0.4",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-mocha": "^1.3.0",
+    "mocha": "^5.2.0"
+  }
+}
