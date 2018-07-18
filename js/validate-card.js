@@ -1,6 +1,6 @@
 'use strict';
 
-const validateCard = function (num) {
+const validateCard = (num) => {
     let numCreditCardReverse = (num.split('')).reverse();
     let pairNumbers = [];
 
