@@ -10,6 +10,8 @@ const validCvv = (number) => {
 }
 
 
-validCvv();
-
-module.exports = validCvv;
+if(typeof window !== "undefined"){
+    window.validCvv = validCvv;
+}else{
+    module.exports = validCvv;
+}

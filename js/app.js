@@ -2,27 +2,29 @@
 //let validateCard = require("./validate-card");
 
 document.getElementById('submit-btn').addEventListener('click',function(){
-    alert('Funciona :D');
-    const numberCard = document.getElementById('cn').value;
-    console.log(numberCard);
-    const monthValidator = document.getElementById('exp2').value;
-    console.log(monthValidator);
-    const yearValidation = document.getElementById('exp').value;
-    console.log(yearValidation);
-    const validCvv = document.getElementById('cvv').value;
-    console.log(validCvv);
-    const nameValidator = document.getElementById('name').value;
-    console.log(nameValidator );
+    const numberCardForm = document.getElementById('cn').value;
+    const monthValidatorForm = document.getElementById('exp2').value;
+    const yearValidationForm = document.getElementById('exp').value;
+    const cvvForm = document.getElementById('cvv').value;
+    const nameValidatorForm = document.getElementById('name').value;
 
-    const expreg = /^[0-9]{16}$/;
-    if(expreg.test(numberCard) && monthValidator == true && yearValidation == true && validCvv == true){
-        validateCard(numberCard);
-        yearValidation(yearValidation);
-        dateValidation(monthValidator);
-        validCvv(validCvv);
-        nameValidator(nameValidator);
+    if(numberCardForm  && monthValidatorForm && yearValidationForm  && cvvForm && nameValidatorForm ){
+        /*validateCard(numberCardForm);
+        dateValidation(monthValidatorForm);
+        validCvv(cvvForm);
+        yearValidation(yearValidationForm);
+        nameValidator(nameValidatorForm);*/
+
+        if(validateCard(numberCardForm) && validCvv(cvvForm) && dateValidation(monthValidatorForm) && yearValidation(yearValidationForm) && nameValidator(nameValidatorForm)){
+            alert('Valid card');
+        } else {
+            alert('Invalid card');
+        }
     } else {
-        console.log(`Invalid card, try again`);
+        console.log('Invalid card, try again');
+        alert('Invalid card, try again');
     }
 
 });
+
+//4152313174039409

@@ -34,13 +34,15 @@ const validateCard = (num) => {
     }
 }
 
-let number = "";
+//const expreg = /^[0-9]{16}$/;
+//    if(expreg.test(numberCard)){
+//        validateCard(numberCard);
+//    } else {
+//        console.log(`Invalid card, try again`);
+//    }
 
-const expreg = /^[0-9]{16}$/;
-    if(expreg.test(number)){
-        validateCard(number);
-    } else {
-        console.log(`Invalid card, try again`);
-    }
-
-module.exports = validateCard;
+if(typeof window !== "undefined"){
+    window.validateCard = validateCard;
+}else{
+    module.exports = validateCard;
+}

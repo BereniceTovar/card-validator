@@ -1,9 +1,7 @@
 const dateValidation = (numero) => {
-    let today = new Date();
-    let n1 = numero;
-    console.log(n1);
+    let n1 = parseInt(numero);
 
-    if (n1 <= 12 && n1 > 0 && typeof numero !== "string"){
+    if (((n1 <= 12) && (n1 > 0)) && typeof n1 !== "string"){
         console.log("this is correct");
         return true; 
     }else {
@@ -13,6 +11,8 @@ const dateValidation = (numero) => {
     }
 }
 
-dateValidation();
-
-module.exports = dateValidation;
+if(typeof window !== "undefined"){
+    window.dateValidation = dateValidation;
+}else{
+    module.exports = dateValidation;
+}
