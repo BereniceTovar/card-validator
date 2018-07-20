@@ -1,4 +1,3 @@
-
 const dateValidation = (numero) => {
     let today = new Date();
     let n1 = numero;
@@ -8,12 +7,12 @@ const dateValidation = (numero) => {
         console.log("this is correct");
         return true; 
     }else {
-                console.log("this is incorrect, you use a not allowed input");
+        console.log("this is incorrect, you use a not allowed input");
         return false;
         
     }
-    
-
 }
 
-dateValidation(12);
+dateValidation();
+
+module.exports = dateValidation;

@@ -18,3 +18,5 @@ const yearValidation = (numero) => {
 
 
 yearValidation();
+
+module.exports = yearValidation;
