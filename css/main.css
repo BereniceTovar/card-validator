@@ -1,4 +1,17 @@
-/* Header - Navigation */
+/* General */
+
+#info-section {
+    visibility: visible;
+}
+
+h2 {
+    color: white;
+    position: absolute;
+    top: 25px;
+    left: 85px;
+}
+
+/*Navigation */
 
 #nav-bar {
     background-color: black;
@@ -18,14 +31,48 @@
 
 /* Header */
 
-img#img-header {
-    height: 380px;
+.phrase {
+    position: absolute;
+    z-index: 5;
+    color: white;
+    top: 300px;
+    left: 40px;
 }
 
-/* Section Videos */
+img#img-header {
+    height: 500px;
+    opacity: 0.9;
+}
+
+/*Video  Section*/
 
 #video-section{
-    margin: 20px;
+    margin: 80px;
+}
+
+h3 {
+    font-size: 50px;
+}
+
+/*Buy Section*/
+
+#buy-btn {
+    width: 200px;
+    height: 100px;
+    font-size: 30px;
+    border-radius: 20px;
+}
+
+/*Footer Section*/
+
+#footer-section {
+    background-color: black;
+    height: 90px;
+}
+
+#footer-section p {
+    color: white;
+    padding: 30px;
 }
 
 /* Form */
