@@ -96,12 +96,13 @@ p#total-payment{
 #btn-pre-order {
     background-color: #00afb9;
     float: right;
-    right: 10%;
+    right: 8%;
     position: fixed;
     margin: 50px;
     padding: 20px;
     font-size: 25px;
     margin-top: 220px;
+    z-index: 5;
 }
 
 input.form-control {
