@@ -2,6 +2,7 @@
 //let validateCard = require("./validate-card");
 
 document.getElementById('submit-btn').addEventListener('click',function(){
+
     const numberCardForm = document.getElementById('cn').value;
     const monthValidatorForm = document.getElementById('exp2').value;
     const yearValidationForm = document.getElementById('exp').value;
@@ -16,13 +17,13 @@ document.getElementById('submit-btn').addEventListener('click',function(){
         nameValidator(nameValidatorForm);*/
 
         if(validateCard(numberCardForm) && validCvv(cvvForm) && dateValidation(monthValidatorForm) && yearValidation(yearValidationForm) && nameValidator(nameValidatorForm)){
-            alert('Valid card');
+            swal("Valid card!", "Successful purchase!", "success");
         } else {
-            alert('Invalid card');
+            swal("Invalid card!", "Try again");
         }
     } else {
         console.log('Invalid card, try again');
-        alert('Invalid card, try again');
+        swal("Invalid card!", "Try again");
     }
 
 });
