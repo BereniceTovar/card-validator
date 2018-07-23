@@ -1,13 +1,11 @@
-# Valida datos de tarjetas de crédito
-
-* **Track:** _Common Core_
-* **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_
-* **Unidad:** _Producto final_
-
-***
-
 # CCVal
 ##  Credit card  Validator 
+
+### About Credit Card Validator 
+
+CCval  is a validator, that uses luhn's algorithm for the validation of credit Cards, you need to have this in mind, *if you dont have a DataBase with names, expiration dates and CVV,  this will just validate the correct input of the information*, as  just numbers when you need it and  the same with the alphabet with tehe users name . 
+
+Here you will find 5 modules, everyone have his own functionality and can be used   separately so, use them as you please. 
 
 ###  Installation 
 
@@ -17,13 +15,43 @@ $npm install --save ccval
 ```
 
 ### Usage
+
 **Js**
 The next tamplate can be use to call this library in your Js 
 ```javascript
-const ccVal = require('./app.js');
+
+if(validateCard(numberCardForm) && validCvv(cvvForm) && dateValidation(monthValidatorForm) && yearValidation(yearValidationForm) && nameValidator(nameValidatorForm)){
+
+alert("Valid card!", "Successful purchase!", "success");
+
+} else {
+
+alert("Invalid card!", "Try again");
+
+};
 ```
 
 This validation can be use in your code calling the each of our  elements by an  id.
+
+ ### Browser
+
+Include it in your HTML:
+```html
+//Card Validator
+<script src="node_modules/ccval/lib/validate-cvv.js"></script>
+
+//Name Validator
+<script src="node_modules/ccval/lib/nameValidator.js"></script>
+
+//CVV  Validator
+<script src="node_modules/ccval/lib/validCvv"></script>
+
+//Month Validator
+<script src="node_modules/ccval/lib/dateValidation"></script>
+
+//Year Validator
+<script src="node_modules/ccval/lib/yearValidation"></script>
+```
 
 ##### Example HTML
 
@@ -67,15 +95,6 @@ This validation can be use in your code calling the each of our  elements by an 
 <input id="name" name="name" class="form-control" placeholder="Full Name"/>
 
 ```
-
-
-
-
- ### Browser
-
-Include it in your HTML:
-
-<script src="node_modules/card-validator/js/app.js"></script>
 
 ### Authors
 

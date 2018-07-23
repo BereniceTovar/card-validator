@@ -1,5 +1,5 @@
 {
-  "name": "card-validator",
+  "name": "ccval",
   "version": "1.0.0",
   "description": "* **Track:** _Common Core_ * **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_ * **Unidad:** _Producto final_",
   "main": "index.js",
