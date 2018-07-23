@@ -6,51 +6,77 @@
 
 ***
 
-El plugin debe recibir una referencia a un elemento del DOM que contenga
-`<input>`s con los siguientes nombres (atributo `name`):
+# CCVal
+##  Credit card  Validator 
 
-* `cn` (Card Number): El número de la tarjeta de crédito
-* `exp` (Expiry Date): Fecha de expiración
-* `cvv` (Card Verification Value): Código de validación de 3 dígitos
-* `name`: Nombre completo como aparece en la tarjeta
+###  Installation 
 
-## Ejemplo
+Use de next code in your terminal to install
+```
+$npm install --save ccval 
+```
+
+### Usage
+**Js**
+The next tamplate can be use to call this library in your Js 
+```javascript
+const ccVal = require('./app.js');
+```
+
+This validation can be use in your code calling the each of our  elements by an  id.
+
+##### Example HTML
+
+***Html***
+**cn  = Card Number**
+```html
+<label for="cn" class="col-form-label">Card number</label>
+
+<input id="cn" name="cn" class="form-control" placeholder="16 digits"/>
+
+```
+***Expiration Month***
+**Expiration month** *you need to take something in mind with this validation, it only validates month, and 2 digits 01 - 12*
+```html
+<label for="exp" class="col-form-label">Expires</label>
+
+<input id="exp2" name="exp" class="form-control" placeholder="MM" />
+
+```
+***Expiration Year***
+**Expiration year** this validation takes 4 digits, and never a year before the actual one 
+```html
+<input id="exp" name="exp" class="form-control" placeholder="YYYY" />
+
+```
+***CVV***
 
 ```html
-<form>
-  <div class="form-group">
-    <label for="cn">Número de tarjeta</label>
-    <input id="cn" name="cn" />
-  </div>
-  <div class="form-group">
-    <label for="exp">Fecha de vencimiento</label>
-    <input id="exp" name="exp" />
-  </div>
-  <div class="form-group">
-    <label for="cvv">CVV</label>
-    <input id="cvv" name="cvv" />
-  </div>
-  <div class="form-group">
-    <label for="name">Nombre completo</label>
-    <input id="name" name="name" />
-  </div>
-  <input type="submit" value="Pagar" />
-</form>
+
+<label for="cvv" class="col-form-label">CVV</label>
+
+<input id="cvv" name="cvv" class="form-control" placeholder="3 digits"/>
+```
+**Name Validation**
+
+```html
+<label for="name">Cardholder name</label>
+
+
+
+<input id="name" name="name" class="form-control" placeholder="Full Name"/>
+
 ```
 
-```js
-const form = document.querySelector('form');
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  if (validateCardDetails(form)) {
-    console.log('datos válido... enviar...');
-  } else {
-    console.log('datos inválidos');
-  }
-});
-```
 
-A la hora de hacer las validaciones, la librería debería de añadir la clase
-`.error` a los `<input>`s que no pasen la validación, o la clase `.success`
-en caso de que sí pase.
+
+ ### Browser
+
+Include it in your HTML:
+
+<script src="node_modules/card-validator/js/app.js"></script>
+
+### Authors
+
+Berenice Tovar & Sarahi Ruiz Lopez
