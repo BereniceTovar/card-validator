@@ -3,9 +3,9 @@
 
 ### About Credit Card Validator 
 
-CCval  is a validator, that uses luhn's algorithm for the validation of credit Cards, you need to have this in mind, *if you dont have a DataBase with names, expiration dates and CVV,  this will just validate the correct input of the information*, as  just numbers when you need it and  the same with the alphabet with tehe users name . 
+CCval  is a validator, that uses luhn's algorithm for the validation of credit Cards, you need to have this in mind, *if you don't have a DataBase with names, expiration dates and CVV,  this will just validate the correct input of the information*, as  just numbers when you need it and  the same with the alphabet with the users name. 
 
-Here you will find 5 modules, everyone have his own functionality and can be used   separately so, use them as you please. 
+Here you will find 5 modules, everyone have his own functionality and can be used   separately so, use them as you need. 
 
 ###  Installation 
 
