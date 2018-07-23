@@ -33,7 +33,7 @@ alert("Invalid card!", "Try again");
 
 This validation can be use in your code calling the each of our  elements by an  id.
 
- ### Browser
+### Browser
 
 Include it in your HTML:
 ```html
