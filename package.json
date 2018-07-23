@@ -4,7 +4,7 @@
   "description": "* **Track:** _Common Core_ * **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_ * **Unidad:** _Producto final_",
   "main": "index.js",
   "scripts": {
-    "test": "",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "production": "./node_modules/.bin/babel src --out-dir lib"
   },
   "repository": {
