@@ -1,5 +1,4 @@
 //app.js Validación de pruebas en html
-//let validateCard = require("./validate-card");
 
 document.getElementById('submit-btn').addEventListener('click',function(){
 
