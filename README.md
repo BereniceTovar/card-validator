@@ -96,6 +96,25 @@ Include it in your HTML:
 
 ```
 
+## Demo
+
+_Main page_
+
+![Desktop](assets/images/demo1.png)
+![Desktop](assets/images/demo2.png)
+![Desktop](assets/images/demo3.png)
+![Desktop](assets/images/demo4.png)
+![Desktop](assets/images/demo5.png)
+
+_After 'Show me more'_
+
+![Desktop](assets/images/demo6.png)
+![Desktop](assets/images/demo7.png)
+
+_After 'Pre-order now!'_ 
+
+![Desktop](assets/images/demo8.png)
+
 ### Authors
 
 Berenice Tovar & Sarahi Ruiz Lopez
