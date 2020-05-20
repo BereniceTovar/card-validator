@@ -3,7 +3,7 @@ CCval  is a validator, that uses luhn's algorithm for the validation of credit C
 
 Here you will find 5 modules, everyone have his own functionality and can be used   separately so, use them as you need. 
 
-![ccval-preview](https://user-images.githubusercontent.com/35509785/45061512-6c9c3a80-b06a-11e8-9070-fb8fcb35825f.png)
+![ccval-preview](assets/images/demo1.png)
 
 ## Desarrollado para 
 [Laboratoria](http://laboratoria.la)
@@ -98,24 +98,6 @@ Include it in your HTML:
 
 ```
 
-## Demo
-
-_Main page_
-
-![Desktop](assets/images/demo1.png)
-![Desktop](assets/images/demo2.png)
-![Desktop](assets/images/demo3.png)
-![Desktop](assets/images/demo4.png)
-![Desktop](assets/images/demo5.png)
-
-_After 'Show me more'_
-
-![Desktop](assets/images/demo6.png)
-![Desktop](assets/images/demo7.png)
-
-_After 'Pre-order now!'_ 
-
-![Desktop](assets/images/demo8.png)
 
 ### Authors
 

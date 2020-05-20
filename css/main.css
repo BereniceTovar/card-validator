@@ -1,5 +1,6 @@
 /*FIRST INDEX*/
 
+
 /* General */
 
 body {
@@ -15,25 +16,17 @@ h2 {
     position: absolute;
     top: 25px;
     left: 85px;
+    padding-left: 15px;
 }
+
 
 /*Navigation */
-
-#nav-bar {
-    background-color: black;
-    height: 90px;
-}
-
-#about, #news, #contact {
-    color: white;
-    position: relative;
-    top: -50px;
-}
 
 #logo {
     width: 80px;
     margin-top: 10px;
 }
+
 
 /* Header */
 
@@ -45,14 +38,16 @@ h2 {
     left: 40px;
 }
 
-img#img-header {
-    height: 600px;
+header {
+    background-image: url("../assets/images/main-image.jpg");
+    height: 400px;
     opacity: 0.9;
 }
 
+
 /*Video  Section*/
 
-#video-section{
+#video-section {
     margin: 80px;
 }
 
@@ -60,7 +55,14 @@ h3 {
     font-size: 50px;
 }
 
+
 /*Buy Section*/
+
+#info-section {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 #buy-btn {
     width: 300px;
@@ -68,6 +70,7 @@ h3 {
     font-size: 30px;
     border-radius: 20px;
 }
+
 
 /*Footer Section*/
 
@@ -79,16 +82,27 @@ h3 {
 #footer-section p {
     color: white;
     padding: 30px;
+    padding-bottom: 0px;
 }
+
 
 /*SECOND INDEX*/
 
+
 /*Description product Section*/
+
+#product-section {
+    background-image: url("../assets/images/product.jpg");
+    min-height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 
 /*Pre-order now*/
 
-p#total-payment{
+p#total-payment {
     color: black;
     font-size: 20px;
 }
@@ -96,7 +110,7 @@ p#total-payment{
 #btn-pre-order {
     background-color: #00afb9;
     float: right;
-    right: 8%;
+    right: 7%;
     position: fixed;
     margin: 50px;
     padding: 20px;
@@ -109,9 +123,26 @@ input.form-control {
     width: 100%;
 }
 
+
 /* Form */
+
 #submit-btn {
     width: 200px;
     margin-left: -65%;
     background-color: #00afb9;
+}
+
+
+/*Media queries*/
+
+@media only screen and (max-width: 425px) {
+    header {
+        background-image: url("../assets/images/mobile-header.jpg");
+        height: 400px;
+        opacity: 0.9;
+        padding-top: 0px;
+    }
+    #btn-pre-order {
+        right: 12%;
+    }
 }
